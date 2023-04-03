@@ -231,7 +231,9 @@ class _FilexState extends State<Filex> {
             ),
             TextButton(
               child: const Text("Delete"),
-              color: Colors.red,
+              style: ButtonStyle(
+                              textStyle: MaterialStateProperty.resolveWith(
+                                  (states) => TextStyle(color: Colors.red))),
               onPressed: () {
                 controller.delete(item).then((_) {
                   Navigator.of(context).pop();
