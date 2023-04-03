@@ -60,13 +60,13 @@ class FilexController {
         return AlertDialog(
             title: const Text("Create a directory"),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 child: const Text("Cancel"),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
               ),
-              FlatButton(
+              TextButton(
                 child: const Text("Create"),
                 onPressed: () {
                   createDirectory(_addDirController.text);
