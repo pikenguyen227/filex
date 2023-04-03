@@ -223,13 +223,13 @@ class _FilexState extends State<Filex> {
         return AlertDialog(
           title: Text("Delete ${item.filename}?"),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: const Text("Cancel"),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
-            FlatButton(
+            TextButton(
               child: const Text("Delete"),
               color: Colors.red,
               onPressed: () {
